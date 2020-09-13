@@ -73,23 +73,20 @@ class _AdvertiserState extends State<Advertiser> {
                 child: ListView(children: <Widget>[
                   Stack(
                     children: <Widget>[
-                      Hero(
-                        tag: 'Books4U',
-                        child: GestureDetector(
-                          onTap: () => Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => AdvertDetail())),
-                          child: Container(
-                            height: 205,
-                            width: 371,
-                            decoration: BoxDecoration(
-                                color: Colors.blue,
-                                borderRadius: BorderRadius.circular(9)),
-                            child: Image.network(
-                              'http://www.aspenwords.org/wp-content/uploads/2020/05/cesar-viteri-693RRbiTAaI-unsplash-e1589933527167.jpg',
-                              fit: BoxFit.fill,
-                            ),
+                      GestureDetector(
+                        onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => AdvertDetail())),
+                        child: Container(
+                          height: 205,
+                          width: 371,
+                          decoration: BoxDecoration(
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.circular(9)),
+                          child: Image.network(
+                            'http://www.aspenwords.org/wp-content/uploads/2020/05/cesar-viteri-693RRbiTAaI-unsplash-e1589933527167.jpg',
+                            fit: BoxFit.fill,
                           ),
                         ),
                       ),
